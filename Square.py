@@ -1,0 +1,26 @@
+import turtle
+def draw_Complex():
+    w = turtle.Screen()
+    w.bgcolor('green')
+    w.setup(400,500)
+    square = turtle.Turtle()
+    circle = turtle.Turtle()
+    triangle = turtle.Turtle()
+    square.begin_fill()
+    square.fillcolor('yellow')
+    for i in range(0, 4):
+        square.forward(100)
+        square.right(90)
+    square.end_fill()
+    circle.begin_fill()
+    circle.fillcolor('red')
+    circle.circle(100)
+    circle.end_fill()
+    triangle.begin_fill()
+    triangle.fillcolor('blue')
+    for i in range(0, 3):
+        triangle.bk(120)
+        triangle.lt(120)
+    triangle.end_fill()
+    w.exitonclick()
+draw_Complex()
